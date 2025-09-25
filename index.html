@@ -4,114 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elony James | Portfolio</title>
-  <style>
-    /* ==== Global Styles ==== */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f9fafb, #edf2f7);
-      color: #333;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #111;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    /* ==== Header ==== */
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.3rem;
-      color: #555;
-    }
-    .contact {
-      margin-top: 15px;
-      color: #666;
-    }
-
-    /* ==== Card Section ==== */
-    section {
-      margin-bottom: 60px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-
-    /* ==== Grid ==== */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    /* ==== Footer ==== */
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #f1f5f9;
-      color: #555;
-    }
-    .socials a {
-      margin: 0 10px;
-      font-size: 1.2rem;
-      color: #333;
-    }
-    .socials a:hover {
-      color: #2563eb;
-    }
-
-    /* ==== Animation ==== */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link  href="./styles.css" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    
+  <header> 
     <h1>Elony James</h1>
-    
     <p>Senior Blockchain & Full-Stack Developer</p>
     <div class="contact">
       <p>📍 San Francisco, CA | ✉️ <a href="mailto:ElonyJames@outlook.com">ElonyJames@outlook.com</a></p>
@@ -226,22 +124,6 @@
     <p>© <span id="year"></span> Elony James. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Auto year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Fade-in effect on scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
