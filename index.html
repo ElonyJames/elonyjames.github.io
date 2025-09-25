@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elony James | Portfolio</title>
+  <style>
+    /* ==== Global Styles ==== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f9fafb, #edf2f7);
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #111;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* ==== Header ==== */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #555;
+    }
+    .contact {
+      margin-top: 15px;
+      color: #666;
+    }
+
+    /* ==== Card Section ==== */
+    section {
+      margin-bottom: 60px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* ==== Grid ==== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* ==== Footer ==== */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f1f5f9;
+      color: #555;
+    }
+    .socials a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .socials a:hover {
+      color: #2563eb;
+    }
+
+    /* ==== Animation ==== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    
+    <h1>Elony James</h1>
+    
+    <p>Senior Blockchain & Full-Stack Developer</p>
+    <div class="contact">
+      <p>📍 San Francisco, CA | ✉️ <a href="mailto:ElonyJames@outlook.com">ElonyJames@outlook.com</a></p>
+    </div>
+    <img src="./img/Elony.png" height="200px" width="200px" style="margin-left: -52vw; margin-top: -40vh;">
+  </header>
+  
+  <div class="container">
+    <!-- Summary -->
+    <section class="fade-in">
+      <div class="card">
+        <h2>Summary</h2>
+        <p style="font-size: 18px;">Highly skilled Senior Blockchain & Full-Stack Developer with 7 years of hands-on experience in building decentralized applications (dApps), smart contracts, and scalable web solutions. Proficient in Solidity, Ethereum, React.js, Node.js, and IPFS. Adept at leading projects from conception to deployment, optimizing blockchain solutions, and building secure, user-centric platforms. Proven success in both DeFi and NFT projects, with a focus on efficiency and scalability.</p>
+      </div>
+    </section>
+    
+
+    <!-- Professional Experience -->
+    <section class="fade-in">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3>Senior Blockchain Developer</h3>
+        <p><em>Blockchain Technologies Ltd., San Francisco, CA | 4/2021 — 9/2025</em></p>
+        <ul>
+          <li>Architected and deployed DeFi protocols, improving user engagement by 30%.</li>
+          <li>Developed and optimized Ethereum smart contracts, reducing gas fees by 40%.</li>
+          <li>Led the creation of a cross-chain NFT marketplace using Ethereum and Polygon.</li>
+          <li>Mentored a team of 5 junior developers to improve code quality and speed.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Full-Stack Developer</h3>
+        <p><em>Innovative Blockchain Solutions, Austin, TX | 1/2018 — 3/2021</em></p>
+        <ul>
+          <li>Built and deployed blockchain apps using React.js and Node.js.</li>
+          <li>Integrated IPFS for decentralized file storage.</li>
+          <li>Designed and implemented private Ethereum networks for enterprise clients.</li>
+          <li>Conducted smart contract security audits with zero vulnerabilities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Special Projects -->
+    <section class="fade-in">
+      <h2>Special Projects</h2>
+      <div class="card">
+        <ul>
+          <li>Led a DeFi yield farming platform achieving $10M TVL in 3 months.</li>
+          <li>Optimized smart contracts, reducing transaction costs by 15%.</li>
+          <li>Improved onboarding with a React.js front-end, boosting retention by 25%.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="fade-in">
+      <div class="grid">
+        <div class="card">
+          <h2>Education</h2>
+          <p><strong>B.Sc. Computer Science</strong><br>University of California, Berkeley<br>10/2013 — 11/2017</p>
+        </div>
+        <div class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Certified Blockchain Developer – Blockchain Council | 2020</li>
+            <li>Ethereum Developer Certificate – ConsenSys Academy | 2019</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="fade-in">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Blockchain</h3>
+          <p>Ethereum, Solana, Polkadot, Solidity, ERC-20/ERC-721, Web3.js, IPFS</p>
+          <h3>Full-Stack</h3>
+          <p>React.js, Node.js, TypeScript, Express.js, MongoDB, REST APIs</p>
+        </div>
+        <div class="card">
+          <h3>Tools & Frameworks</h3>
+          <p>Docker, Kubernetes, Truffle, Hardhat, Git, Chainlink</p>
+          <h3>DevOps</h3>
+          <p>AWS, GCP, Azure, CI/CD</p>
+          <h3>Languages</h3>
+          <p>JavaScript, TypeScript, Solidity, Python, Go</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="fade-in">
+      <h2>Soft Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Strong communicator with the ability to explain complex ideas.</li>
+          <li>Collaborative team player with leadership experience.</li>
+          <li>Self-motivated with excellent time management and problem-solving.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#">🌐 GitHub</a>
+      <a href="#">💼 LinkedIn</a>
+    </div>
+    <p>© <span id="year"></span> Elony James. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Fade-in effect on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>
