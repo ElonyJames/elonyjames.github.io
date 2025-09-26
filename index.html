@@ -116,13 +116,39 @@
   </div>
 
   <!-- Footer -->
-  <footer>
-    <div class="socials">
+ 
+      <!-- Contact -->
+    <section class="fade-in" id="contact">
+      <h2 style="margin-left: 28vh;">Contact</h2>
+      <div class="card contact-card">
+        <p>I'd love to hear from you! Whether it's a project, collaboration, or just a friendly hello — feel free to reach out.</p>
+        
+        <form action="mailto:ElonyJames@outlook.com" method="post" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+          </div>
+
+          <button type="submit">Send Message ✉️</button>
+        </form>
+
+        <div class="direct-links">
+             <div class="socials">
       <a href="#">🌐 GitHub</a>
       <a href="#">💼 LinkedIn</a>
     </div>
-    <p>© <span id="year"></span> Elony James. All rights reserved.</p>
-  </footer>
+    <p>© <span id="year"></span> Elony James. All rights reserved.</p>  
+        </div>
+      </div>
+    </section>
+
 
   <script src="./script.js"></script>
 </body>
